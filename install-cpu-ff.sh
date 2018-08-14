@@ -84,5 +84,6 @@ conda install -y -c r r-essentials r-rms
 # Prompt to start Jupyter Notebook Server
 cd ~
 echo "Remember the change the IP type from ephemeral to static, and add IP to firewall rule"
+echo "Type exit to close the current SSH connection, then start a new SSH connection so that PATH variable could be updated"
+echo "Type \"source activate machinelearning\" to start the conda environment machinelearning which has Jupyter installed "
 echo "\"jupyter notebook --ip=0.0.0.0\" will start Jupyter on port 8888 and accessible from the external IP address"
-echo "If you get an error instead, try restarting your session so your $PATH is updated"
