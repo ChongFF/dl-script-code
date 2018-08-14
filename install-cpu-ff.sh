@@ -35,7 +35,7 @@ export PATH="$HOME/miniconda3/bin:$PATH"
 conda create -y -n machinelearning python=3.5
 source activate machinelearning
 
-conda install -y pandas numpy scikit-learn jupyter pillow
+conda install -y pandas numpy scikit-learn jupyter pillow cython
 conda install -y bcolz
 conda upgrade -y --all
 
