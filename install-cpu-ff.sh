@@ -77,9 +77,10 @@ c.NotebookApp.open_browser = False" >> $HOME/.jupyter/jupyter_notebook_config.py
 
 # Prompt to start notebook
 cd ~
-echo "\"jupyter notebook\" will start Jupyter on port 8888"
+echo "Remember the change the IP type from ephemeral to static, and add IP to firewall rule"
+echo "\"jupyter notebook --ip=0.0.0.0\" will start Jupyter on port 8888 and accessible from the external IP address"
 echo "If you get an error instead, try restarting your session so your $PATH is updated"
 
 # Installing commonly used packages
 pip install imagehash hyperopt
-conda install -y py-xgboost matplotlib seaborn r r-essentials
+conda install -y py-xgboost matplotlib seaborn r r-essentials r-rms
