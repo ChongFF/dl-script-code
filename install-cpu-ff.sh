@@ -41,9 +41,6 @@ conda upgrade -y --all
 
 # install and configure theano (pip install will install too new a version)
 conda install -y theano
-echo "[global]
-device = cpu
-floatX = float32
 
 # install and configure keras
 pip install keras==1.2.2 # use a fixed version of Keras so that package update won't necessitate code change
