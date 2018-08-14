@@ -110,7 +110,8 @@ c.NotebookApp.open_browser = False" >> $HOME/.jupyter/jupyter_notebook_config.py
 # clone the fast.ai course repo and prompt to start notebook
 cd ~
 git clone https://github.com/fastai/courses.git
-echo "\"jupyter notebook\" will start Jupyter on port 8888"
+echo "Remember the change the IP type from ephemeral to static, and add IP to firewall rule"
+echo "\"jupyter notebook --ip=0.0.0.0\" will start Jupyter on port 8888 and accessible from the external IP address"
 echo "If you get an error instead, try restarting your session so your $PATH is updated"
 
 # Installing commonly used packages
