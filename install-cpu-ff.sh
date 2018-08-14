@@ -83,4 +83,7 @@ echo "If you get an error instead, try restarting your session so your $PATH is 
 
 # Installing commonly used packages
 pip install imagehash hyperopt
-conda install -y py-xgboost matplotlib seaborn r r-essentials r-rms
+conda install -y py-xgboost matplotlib seaborn 
+sudo apt-get install -y python-qt4 # package required for Ubuntu for R in Jupyter to work properly
+# https://stackoverflow.com/questions/32389599/anaconda-importerror-libsm-so-6-cannot-open-shared-object-file-no-such-file-o
+conda install -c r r-essentials r-rms
