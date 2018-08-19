@@ -107,13 +107,14 @@ echo "c.IPKernelApp.pylab = 'inline'  # in-line figure when using Matplotlib" >>
 echo "c.NotebookApp.ip = '*' # serve the notebooks locally
 c.NotebookApp.open_browser = False" >> $HOME/.jupyter/jupyter_notebook_config.py
 
+# Installing commonly used packages
+pip install imagehash hyperopt
+conda install -y py-xgboost matplotlib seaborn
+
 # clone the fast.ai course repo and prompt to start notebook
 cd ~
 git clone https://github.com/fastai/courses.git
 echo "Remember the change the IP type from ephemeral to static, and add IP to firewall rule"
+echo "Type exit to close the current SSH connection, then start a new SSH connection so that PATH variable could be updated"
+echo "Type \"source activate machinelearning\" to start the conda environment machinelearning which has Jupyter installed "
 echo "\"jupyter notebook --ip=0.0.0.0\" will start Jupyter on port 8888 and accessible from the external IP address"
-echo "If you get an error instead, try restarting your session so your $PATH is updated"
-
-# Installing commonly used packages
-pip install imagehash hyperopt
-conda install -y py-xgboost matplotlib seaborn
