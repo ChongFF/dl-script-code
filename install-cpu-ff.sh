@@ -3,7 +3,7 @@
 # including R and IPython
 
 # Forked from: https://github.com/fastai/courses/blob/master/setup/install-gpu.sh
-# Download the RAW one here: "wget https://raw.githubusercontent.com/ChongFF/dl-script-code/master/install-gpu_ffv2.sh"
+# Download the RAW one here: "wget https://raw.githubusercontent.com/ChongFF/dl-script-code/master/install-cpu-ff.sh"
 # Run the script by typing: "bash <script_name.sh>"
 
 # Wish-list:
