@@ -73,7 +73,7 @@ echo "c.NotebookApp.ip = '*' # serve the notebooks locally
 c.NotebookApp.open_browser = False" >> $HOME/.jupyter/jupyter_notebook_config.py
 
 # Installing commonly used packages
-pip install imagehash hyperopt kaggle
+pip install PyHamcrest imagehash hyperopt kaggle #PyHamcrest is required for kaggle
 conda install -y py-xgboost matplotlib seaborn 
 
 # Setting up R for Jupyter Notebook
