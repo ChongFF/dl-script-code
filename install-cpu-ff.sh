@@ -19,7 +19,8 @@
 sudo apt-get update
 sudo apt-get --assume-yes upgrade
 # dtrx preferred over bzip2 because dtrx handles a wide range of archive format 7zip, zip, ...
-sudo apt-get --assume-yes install dtrx tmux build-essential gcc g++ make binutils
+# cmake is needed for lightGBM compilation
+sudo apt-get --assume-yes install dtrx tmux build-essential gcc g++ make cmake binutils
 sudo apt-get --assume-yes install software-properties-common
 
 # download and install GPU drivers
