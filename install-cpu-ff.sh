@@ -86,6 +86,12 @@ conda install -y -c r r-base64enc=0.1_3=mro343h086d26f_0
 #### the above two lines are to force 3.4.3 instead of 3.5 of R is installed 
 conda install -y -c r r-essentials r-rms
 
+# install lightGBM for R
+git clone --recursive https://github.com/Microsoft/LightGBM
+cd LightGBM/R-package
+# export CXX=g++-7 CC=gcc-7  # macOS users, if you decided to compile with gcc, don't forget to specify compilers (replace "7" with version of gcc installed on your machine)
+R CMD INSTALL --build . --no-multiarch
+
 # Prompt to start Jupyter Notebook Server
 cd ~
 echo "Remember the change the IP type from ephemeral to static, and add IP to firewall rule"
