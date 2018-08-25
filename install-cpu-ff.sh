@@ -84,6 +84,7 @@ sudo apt-get install -y python-qt4 # package required for Ubuntu for R in Jupyte
 conda install -y mro-base=3.4.3
 conda install -y -c r r-base64enc=0.1_3=mro343h086d26f_0
 #### the above two lines are to force 3.4.3 instead of 3.5 of R is installed 
+# choose R 3.4.3 because WeightedROC seems to be not available for R 3.5, and get lightGBM
 conda install -y -c r r-essentials r-rms
 
 # install lightGBM for R
